@@ -1,4 +1,4 @@
-##### Бот написан @thedeaddan за 20 минут |v2.3
+##### Бот написан @thedeaddan за 20 минут |v2.4
 import vk_api #Либа вк апи
 import random #Название за себя говорит
 import time #Библиотека для задержек
