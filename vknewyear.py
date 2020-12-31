@@ -1,12 +1,13 @@
-##### Бот написан @thedeaddan за 20 минут |v2.4
+##### Бот написан @thedeaddan за 20 минут 
 import vk_api #Либа вк апи
 import random #Название за себя говорит
 import time #Библиотека для задержек
 import datetime # Включение времени
 import telebot #Бот тг
-bot = telebot.TeleBot("токен тг") # Подключение ТГ бота для ошибок
-vk = vk_api.VkApi(token="токен вк")#Подключение вк
-bot.send_message(895942747,"Бот начал работу!") # Оповещаем создателя о начале работы.
+version = 2.5
+bot = telebot.TeleBot("1354721306:AAEks114uZMsu0I0Dc6y0K_rlBPk-2yuryc") # Подключение ТГ бота для ошибок
+vk = vk_api.VkApi(token="dfc136284a0001b88beef431966386a339734a477c51ccbbad89a0fe263983c0fe8486eb073fce3807a5c")#Подключение вк
+bot.send_message(895942747,"Бот начал работу! Текущая версия "+ str(version)) # Оповещаем создателя о начале работы.
 while True: #Проверка времени каждую секунду
 	time.sleep(1) #Задержка
 	delta = datetime.timedelta(hours=3, minutes=0)# Учёт часового пояса
