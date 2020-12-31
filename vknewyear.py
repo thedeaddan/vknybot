@@ -1,15 +1,17 @@
-##### Бот написан @thedeaddan за 20 минут | v2.6
+##### Бот написан @thedeaddan за 20 минут 
 import vk_api #Либа вк апи
 import random #Название за себя говорит
 import time #Библиотека для задержек
 import datetime # Включение времени
 import telebot #Бот тг
-version = 2.6
-bot = telebot.TeleBot("Токен тг") # Подключение ТГ бота для ошибок
-vk = vk_api.VkApi(token="Токен вк")#Подключение вк
+### Библиотека только для unix подобных систем!!! ####
+import os
+###
+version = 2.7
+bot = telebot.TeleBot("Токен") # Подключение ТГ бота для ошибок
+vk = vk_api.VkApi(token="Токен")#Подключение вк
 bot.send_message(895942747,"Бот начал работу! Текущая версия "+ str(version)) # Оповещаем создателя о начале работы.
 while True: #Проверка времени каждую секунду
-	time.sleep(1) #Задержка
 	delta = datetime.timedelta(hours=3, minutes=0)# Учёт часового пояса
 	t = (datetime.datetime.now(datetime.timezone.utc) + delta)# Создание функции времени
 	sec = str(t.strftime("%S"))#Секунды
@@ -20,6 +22,10 @@ while True: #Проверка времени каждую секунду
 	ostm = 60 - int(minutes)
 	osth = 24 - int(hour)
 	print("Сейчас "+str(nowtime)+" до нового года "+str(osth)+" ч. "+ str(ostm) +" мин.")
+	time.sleep(1) #Задержка
+	#Строка только для unix подобных!!!!#
+	os.system("clear")
+	#
 	stop = 0
 	#КУСОК КОДА КОТОРЫЙ НУЖЕН ПО ПРИКОЛУ!!! Каждые пол часа присылать сообщение о том сколько осталось до нг времени
 	if minutes == "00" and seconds == "00":
