@@ -5,8 +5,8 @@ import time #Библиотека для задержек
 import datetime # Включение времени
 import telebot #Бот тг
 version = 2.5
-bot = telebot.TeleBot("1354721306:AAEks114uZMsu0I0Dc6y0K_rlBPk-2yuryc") # Подключение ТГ бота для ошибок
-vk = vk_api.VkApi(token="dfc136284a0001b88beef431966386a339734a477c51ccbbad89a0fe263983c0fe8486eb073fce3807a5c")#Подключение вк
+bot = telebot.TeleBot("Токен тг") # Подключение ТГ бота для ошибок
+vk = vk_api.VkApi(token="Токен вк")#Подключение вк
 bot.send_message(895942747,"Бот начал работу! Текущая версия "+ str(version)) # Оповещаем создателя о начале работы.
 while True: #Проверка времени каждую секунду
 	time.sleep(1) #Задержка
