@@ -1,10 +1,10 @@
-##### Бот написан @thedeaddan за 20 минут 
+##### Бот написан @thedeaddan за 20 минут | v2.6
 import vk_api #Либа вк апи
 import random #Название за себя говорит
 import time #Библиотека для задержек
 import datetime # Включение времени
 import telebot #Бот тг
-version = 2.5
+version = 2.6
 bot = telebot.TeleBot("Токен тг") # Подключение ТГ бота для ошибок
 vk = vk_api.VkApi(token="Токен вк")#Подключение вк
 bot.send_message(895942747,"Бот начал работу! Текущая версия "+ str(version)) # Оповещаем создателя о начале работы.
